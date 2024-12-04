@@ -26,7 +26,7 @@ const SectionTitle = ({
       <p
         className={cn(
           "text-muted-foreground capitalize leading-relaxed",
-          !left && "max-w-lg mx-auto"
+          !left && "max-w-2xl mx-auto"
         )}
       >
         {description}

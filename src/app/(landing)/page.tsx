@@ -2,6 +2,7 @@ import HeroSection from "@/components/hero";
 import Navbar from "@/components/navbar";
 import Services from "@/components/landing/services";
 import Features from "@/components/landing/features";
+import GetService from "@/components/landing/get-service";
 
 const LandingPage = () => {
   return (
@@ -10,6 +11,7 @@ const LandingPage = () => {
       <HeroSection />
       <Services />
       <Features />
+      <GetService />
     </main>
   );
 };

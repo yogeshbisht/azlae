@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { FaAndroid, FaApple } from "react-icons/fa6";
 import SectionTitle from "./section/section-title";
+import ArrowPath from "./paths/arrow-path";
 
 const HeroSection = () => {
   return (
@@ -38,7 +39,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <div className="down-arrow-path h-20 w-full bg-neutral-900" />
+      <ArrowPath direction="down" inverted />
     </section>
   );
 };
