@@ -9,3 +9,9 @@ export interface Service {
   title: string;
   description: string;
 }
+
+export interface Feature {
+  icon: React.JSX;
+  title: string;
+  description: string;
+}

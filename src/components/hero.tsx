@@ -6,10 +6,11 @@ import SectionTitle from "./section/section-title";
 const HeroSection = () => {
   return (
     <section className="h-[720px] relative bg-neutral-900">
-      <div className="h-full grid grid-cols-1 md:grid-cols-2 items-center justify-between section-padding max-w-screen-2xl mx-auto gap-4">
+      <div className="h-full grid grid-cols-1 md:grid-cols-2 items-center justify-between section-padding max-w-screen-2xl gap-4">
         <div className="flex flex-col mt-24">
           <SectionTitle
             left
+            inverted
             title="Welcome to the future of AI"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam minus suscipit vel, sit veritatis possimus molestias odio voluptates facilis omnis!"
           />
@@ -25,7 +26,7 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="relative flex justify-center items-center">
-          <div className="relative h-[660px] w-[320px] rounded-[40px] mb-[-200px] justify-center items-center bg-neutral-200 z-10 hidden lg:flex shadow-xl">
+          <div className="relative h-[660px] w-[320px] rounded-[40px] mb-[-200px] justify-center items-center bg-neutral-200 z-10 hidden lg:flex shadow-large">
             <div className="relative h-[640px] w-[300px] rounded-[40px] overflow-hidden">
               <Image
                 src="https://images.pexels.com/photos/29102417/pexels-photo-29102417/free-photo-of-nighttime-aerial-view-of-brooklyn-bridge.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"

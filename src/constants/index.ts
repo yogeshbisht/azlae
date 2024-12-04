@@ -1,4 +1,5 @@
-import { Service } from "@/types";
+import { Feature, Service } from "@/types";
+import { BiRocket } from "react-icons/bi";
 import { BsWindowDesktop } from "react-icons/bs";
 import {
   FaTachographDigital,
@@ -50,5 +51,26 @@ export const serviceList: Service[] = [
     title: "Website Development",
     description:
       "In today's competitive market, timing is everything. Our efficient."
+  }
+];
+
+export const featureList: Feature[] = [
+  {
+    icon: BiRocket,
+    title: "Feature One Title",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam minus suscipit vel, sit veritatis possimus molestias odio voluptates facilis omnis!"
+  },
+  {
+    icon: BiRocket,
+    title: "Feature Two Title",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam minus suscipit vel, sit veritatis possimus molestias odio voluptates facilis omnis!"
+  },
+  {
+    icon: BiRocket,
+    title: "Feature Three Title",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam minus suscipit vel, sit veritatis possimus molestias odio voluptates facilis omnis!"
   }
 ];

@@ -1,9 +1,9 @@
-import SectionTitle from "./section-title";
-import SectionContainer from "./section-container";
+import SectionTitle from "../section/section-title";
+import SectionContainer from "../section/section-container";
 import { serviceList } from "@/constants";
-import ServiceCard from "./service-card";
+import ServiceCard from "../section/service-card";
 
-const ServicesSection = () => {
+const Services = () => {
   return (
     <SectionContainer sectionId="services" className="pt-48">
       <SectionTitle
@@ -19,4 +19,4 @@ const ServicesSection = () => {
   );
 };
 
-export default ServicesSection;
+export default Services;

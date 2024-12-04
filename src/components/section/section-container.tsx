@@ -14,7 +14,7 @@ const SectionContainer = ({
 }: SectionContainerProps) => {
   return (
     <section id={sectionId} className={cn("py-24", className)}>
-      <div className="max-w-screen-2xl mx-auto section-padding">{children}</div>
+      <div className="max-w-screen-2xl section-padding">{children}</div>
     </section>
   );
 };
