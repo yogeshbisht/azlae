@@ -5,9 +5,9 @@ import SectionTitle from "./section/section-title";
 
 const HeroSection = () => {
   return (
-    <section className="h-[720px] relative bg-neutral-900">
-      <div className="h-full grid grid-cols-1 md:grid-cols-2 items-center justify-between section-padding max-w-screen-2xl gap-4">
-        <div className="flex flex-col mt-24">
+    <section className="relative h-[720px] bg-neutral-900">
+      <div className="section-padding grid h-full max-w-screen-2xl grid-cols-1 items-center justify-between gap-4 md:grid-cols-2">
+        <div className="mt-24 flex flex-col">
           <SectionTitle
             left
             inverted
@@ -16,18 +16,18 @@ const HeroSection = () => {
           />
           <div className="flex items-center gap-4">
             <Button variant="secondary" className="w-[200px]" size="lg">
-              <FaApple className="size-4 mr-0.5" />
+              <FaApple className="mr-0.5 size-4" />
               Download for iOS
             </Button>
             <Button variant="secondary" className="w-[200px]" size="lg">
-              <FaAndroid className="size-4 mr-0.5" />
+              <FaAndroid className="mr-0.5 size-4" />
               Download for Android
             </Button>
           </div>
         </div>
-        <div className="relative flex justify-center items-center">
-          <div className="relative h-[660px] w-[320px] rounded-[40px] mb-[-200px] justify-center items-center bg-neutral-200 z-10 hidden lg:flex shadow-large">
-            <div className="relative h-[640px] w-[300px] rounded-[40px] overflow-hidden">
+        <div className="relative flex items-center justify-center">
+          <div className="shadow-large relative z-10 mb-[-200px] hidden h-[660px] w-[320px] items-center justify-center rounded-[40px] bg-neutral-200 lg:flex">
+            <div className="relative h-[640px] w-[300px] overflow-hidden rounded-[40px]">
               <Image
                 src="https://images.pexels.com/photos/29102417/pexels-photo-29102417/free-photo-of-nighttime-aerial-view-of-brooklyn-bridge.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                 alt="hero"
@@ -38,7 +38,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-20 bg-neutral-900 hero-clip-path" />
+      <div className="down-arrow-path h-20 w-full bg-neutral-900" />
     </section>
   );
 };

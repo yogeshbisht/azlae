@@ -17,10 +17,10 @@ const Navbar = () => {
         scrollStarted ? "shadow-lg h-16 bg-white" : "bg-transparent"
       )}
     >
-      <div className="flex items-center justify-between h-full max-w-screen-2xl section-padding">
+      <div className="section-padding flex h-full max-w-screen-2xl items-center justify-between">
         <BrandLogo />
         <Button variant={scrollStarted ? "default" : "secondary"}>
-          <BiLogInCircle className="size-4 mr-0.5" />
+          <BiLogInCircle className="mr-0.5 size-4" />
           Get Started
         </Button>
       </div>

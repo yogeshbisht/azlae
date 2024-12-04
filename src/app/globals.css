@@ -75,8 +75,12 @@ body {
   }
 }
 
-.hero-clip-path {
-  clip-path: polygon(0 100%, 100% 0, 0 0);
+.down-arrow-path {
+  clip-path: polygon(0 0, 50% 100%, 100% 0);
+}
+
+.up-arrow-path {
+  clip-path: polygon(0 100%, 50% 0, 100% 100%);
 }
 
 .shadow-large {

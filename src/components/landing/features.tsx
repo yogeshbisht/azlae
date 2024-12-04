@@ -6,7 +6,7 @@ import { featureList } from "@/constants";
 const Features = () => {
   return (
     <SectionContainer sectionId="features" className="pt-48">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
         <div className="flex items-center justify-center">
           <div className="h-[600px] w-[400px] rounded-xl bg-primary text-secondary" />
         </div>
@@ -19,14 +19,14 @@ const Features = () => {
           {featureList.map((feature, index) => (
             <div
               key={`${feature.title}-${index}`}
-              className="flex gap-6 items-center mb-4"
+              className="mb-4 flex items-center gap-6"
             >
-              <div className="flex items-center justify-center size-16 rounded-full bg-primary text-secondary">
+              <div className="flex size-16 items-center justify-center rounded-full bg-primary text-secondary">
                 <feature.icon className="size-8" />
               </div>
               <div className="flex flex-col gap-1">
                 <h3 className="text-2xl font-bold">{feature.title}</h3>
-                <p className="text-sm text-muted-foreground max-w-lg">
+                <p className="max-w-lg text-sm text-muted-foreground">
                   {feature.description}
                 </p>
               </div>
