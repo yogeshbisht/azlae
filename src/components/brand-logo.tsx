@@ -1,14 +1,14 @@
-import { twMerge } from "tailwind-merge";
 import useWindowScroll from "@/hooks/use-window-scroll";
+import { cn } from "@/lib/utils";
 
 const BrandLogo = () => {
   const scrollY = useWindowScroll();
 
   return (
     <div
-      className={twMerge(
+      className={cn(
         "text-2xl font-extrabold",
-        scrollY > 80 ? "text-black" : "text-white"
+        scrollY > 80 ? "text-primary" : "text-secondary"
       )}
     >
       LOGO.

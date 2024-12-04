@@ -3,3 +3,9 @@ export interface MenuItem {
   href: string;
   active: boolean;
 }
+
+export interface Service {
+  icon: React.JSX;
+  title: string;
+  description: string;
+}

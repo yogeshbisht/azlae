@@ -1,13 +1,13 @@
-import EmptySection from "@/components/empty-section";
 import HeroSection from "@/components/hero";
-import NavigationBar from "@/components/navigation-bar";
+import Navbar from "@/components/navbar";
+import ServicesSection from "@/components/section/services-section";
 
 const LandingPage = () => {
   return (
     <main>
-      <NavigationBar />
+      <Navbar />
       <HeroSection />
-      <EmptySection />
+      <ServicesSection />
     </main>
   );
 };
