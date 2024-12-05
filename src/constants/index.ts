@@ -147,3 +147,34 @@ export const faqData: FAQ[] = [
       "We do not offer refunds for our platform. However, you can cancel anytime during the trial period and you won't be charged."
   }
 ];
+
+export const testimonialData = [
+  {
+    name: "Sarah Johnson",
+    role: "Product Manager",
+    avatar: "/testimonials/avatar-1.jpg", // Add actual avatar images
+    content:
+      "The platform has transformed how our team handles code reviews. The automated workflows have saved us countless hours."
+  },
+  {
+    name: "Michael Chen",
+    role: "Senior Developer",
+    avatar: "/testimonials/avatar-2.jpg",
+    content:
+      "The intelligent code review features are incredible. It's like having an extra team member who never misses a detail."
+  },
+  {
+    name: "Emily Rodriguez",
+    role: "Tech Lead",
+    avatar: "/testimonials/avatar-3.jpg",
+    content:
+      "Implementation was smooth, and the support team was incredibly helpful. Our productivity has increased significantly."
+  },
+  {
+    name: "David Kim",
+    role: "Software Engineer",
+    avatar: "/testimonials/avatar-4.jpg",
+    content:
+      "The platform's intuitive interface and powerful features make it an essential tool for our development workflow."
+  }
+];

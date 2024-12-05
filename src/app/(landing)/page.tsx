@@ -6,6 +6,7 @@ import GetService from "@/components/landing/get-service";
 import About from "@/components/landing/about";
 import Pricing from "@/components/landing/pricing";
 import FAQs from "@/components/landing/faqs";
+import Testimonials from "@/components/landing/testimonials";
 
 const LandingPage = () => {
   return (
@@ -18,6 +19,7 @@ const LandingPage = () => {
       <About />
       <Pricing />
       <FAQs />
+      <Testimonials />
     </main>
   );
 };
