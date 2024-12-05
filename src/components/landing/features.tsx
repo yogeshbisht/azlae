@@ -28,12 +28,14 @@ const Features = () => {
               key={`${feature.title}-${index}`}
               className="mb-4 flex items-center gap-6"
             >
-              <div className="flex size-16 items-center justify-center rounded-full bg-primary text-secondary">
+              <div className="flex size-16 items-center justify-center rounded-full bg-brand text-brand-light">
                 <feature.icon className="size-8" />
               </div>
               <div className="flex flex-col gap-1">
-                <h3 className="text-2xl font-bold">{feature.title}</h3>
-                <p className="max-w-lg text-sm text-muted-foreground">
+                <h3 className="text-2xl font-bold text-brand">
+                  {feature.title}
+                </h3>
+                <p className="max-w-lg text-sm text-brand-medium">
                   {feature.description}
                 </p>
               </div>

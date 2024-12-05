@@ -7,11 +7,11 @@ const About = () => {
   return (
     <SectionContainer sectionId="about">
       <SectionTitle
-        title="About"
+        title="About Our Service"
         description="Get Started In Minutes: Download The App, Create Your Profile"
       />
       <div className="flex items-center justify-center gap-8 lg:grid-cols-2">
-        <div className="max-w-xl space-y-8">
+        <div className="max-w-xl space-y-8 text-brand">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -24,12 +24,16 @@ const About = () => {
             cupidatat non proident, sunt in culpa qui officia deserunt mollit
             anim id est laborum.
           </p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+            pariatur iste est laboriosam autem, consequatur omnis saepe ex
+            distinctio sunt!
+          </p>
           <div className="flex items-center gap-6">
             {Array.from({ length: 3 }).map((_, index) => (
               <div
                 key={index}
-                className="flex h-40 flex-col items-center justify-center gap-2 rounded-2xl p-4 shadow-[0_0_10px_0_rgba(0,0,0,0.2)]"
+                className="flex h-40 w-full flex-col items-center justify-center gap-2 rounded-2xl bg-brand-light p-4"
               >
                 <FaDownload className="size-8" />
                 <p>Download</p>
@@ -37,7 +41,7 @@ const About = () => {
             ))}
           </div>
         </div>
-        <div className="flex items-center justify-center">
+        <div className="flex w-full items-center justify-center">
           <Image
             src="https://picsum.photos/seed/picsum/400/600"
             alt="about"

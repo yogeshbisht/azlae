@@ -17,15 +17,15 @@ const SectionTitle = ({
     <div className={cn("text-center mb-16", left && "text-left")}>
       <h2
         className={cn(
-          "text-4xl md:text-5xl/tight lg:text-6xl/tight font-extrabold capitalize leading-normal",
-          inverted && "text-slate-100"
+          "text-4xl md:text-5xl/tight lg:text-6xl/tight font-extrabold capitalize leading-normal text-brand",
+          inverted && "text-brand-light"
         )}
       >
         {title}
       </h2>
       <p
         className={cn(
-          "text-muted-foreground capitalize leading-relaxed",
+          "text-brand-medium capitalize leading-relaxed",
           !left && "max-w-2xl mx-auto"
         )}
       >

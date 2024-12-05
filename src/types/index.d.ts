@@ -24,3 +24,8 @@ export interface PricingTier {
   buttonText: string;
   popular?: boolean;
 }
+
+export interface FAQ {
+  question: string;
+  answer: string;
+}

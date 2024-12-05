@@ -1,4 +1,4 @@
-import { Feature, PricingTier, Service } from "@/types";
+import { FAQ, Feature, PricingTier, Service } from "@/types";
 import { BiRocket } from "react-icons/bi";
 import { BsWindowDesktop } from "react-icons/bs";
 import {
@@ -117,5 +117,33 @@ export const pricingTiers: PricingTier[] = [
       "Custom training"
     ],
     buttonText: "Contact Sales"
+  }
+];
+
+export const faqData: FAQ[] = [
+  {
+    question: "What is this platform about?",
+    answer:
+      "Our platform is designed to help developers and teams collaborate more effectively through intelligent code reviews and automated workflows. It's a great tool for teams to review code, discuss changes, and ensure that the code is of high quality before it's merged into the main branch."
+  },
+  {
+    question: "How does the pricing work?",
+    answer:
+      "We offer flexible pricing plans including a free tier for individual developers and premium plans for teams with additional features and support. The pricing is transparent and there are no hidden fees."
+  },
+  {
+    question: "Is there a free trial available?",
+    answer:
+      "Yes, we offer a 14-day free trial on all our premium plans with full access to all features. You can cancel anytime during the trial period and you won't be charged."
+  },
+  {
+    question: "What kind of support do you provide?",
+    answer:
+      "We provide 24/7 email support for all users, with priority support and dedicated account managers for enterprise customers. We also offer a SLA guarantee for enterprise customers."
+  },
+  {
+    question: "What is the refund policy?",
+    answer:
+      "We do not offer refunds for our platform. However, you can cancel anytime during the trial period and you won't be charged."
   }
 ];

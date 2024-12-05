@@ -14,12 +14,12 @@ const Navbar = () => {
     <nav
       className={cn(
         "h-20 transition-all duration-500 fixed top-0 left-0 right-0 z-50",
-        scrollStarted ? "shadow-lg h-16 bg-white" : "bg-transparent"
+        scrollStarted ? "shadow-lg h-16 bg-slate-100" : "bg-transparent"
       )}
     >
       <div className="section-padding flex h-full max-w-screen-2xl items-center justify-between">
         <BrandLogo />
-        <Button variant={scrollStarted ? "default" : "secondary"}>
+        <Button variant={scrollStarted ? "brand" : "secondary"}>
           <BiLogInCircle className="mr-0.5 size-4" />
           Get Started
         </Button>

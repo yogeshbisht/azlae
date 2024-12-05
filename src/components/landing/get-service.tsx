@@ -9,7 +9,7 @@ const GetService = () => {
   return (
     <SectionContainer
       sectionId="get-service"
-      className="bg-neutral-900"
+      className="bg-brand"
       style={{
         clipPath: "polygon(0 0, 50% 5%, 100% 0, 100% 95%, 50% 100%, 0 95%)"
       }}
