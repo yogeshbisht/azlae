@@ -2,13 +2,20 @@ import React from "react";
 import SectionContainer from "../section/section-container";
 import SectionTitle from "../section/section-title";
 import { featureList } from "@/constants";
+import Image from "next/image";
 
 const Features = () => {
   return (
     <SectionContainer sectionId="features" className="pt-48">
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
         <div className="flex items-center justify-center">
-          <div className="h-[600px] w-[400px] rounded-xl bg-primary text-secondary" />
+          <Image
+            src="https://picsum.photos/400/600"
+            alt="about"
+            width={400}
+            height={600}
+            className="rounded-2xl shadow-lg"
+          />
         </div>
         <div className="flex flex-col gap-4">
           <SectionTitle

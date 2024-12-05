@@ -2,11 +2,15 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { FaAndroid, FaApple } from "react-icons/fa6";
 import SectionTitle from "./section/section-title";
-import ArrowPath from "./paths/arrow-path";
 
 const HeroSection = () => {
   return (
-    <section className="relative h-[720px] bg-neutral-900">
+    <section
+      className="relative h-[720px] bg-neutral-900"
+      style={{
+        clipPath: "polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%)"
+      }}
+    >
       <div className="section-padding grid h-full max-w-screen-2xl grid-cols-1 items-center justify-between gap-4 md:grid-cols-2">
         <div className="mt-24 flex flex-col">
           <SectionTitle
@@ -26,11 +30,11 @@ const HeroSection = () => {
             </Button>
           </div>
         </div>
-        <div className="relative flex items-center justify-center">
+        <div className="relative flex h-full items-center justify-center">
           <div className="shadow-large relative z-10 mb-[-200px] hidden h-[660px] w-[320px] items-center justify-center rounded-[40px] bg-neutral-200 lg:flex">
             <div className="relative h-[640px] w-[300px] overflow-hidden rounded-[40px]">
               <Image
-                src="https://images.pexels.com/photos/29102417/pexels-photo-29102417/free-photo-of-nighttime-aerial-view-of-brooklyn-bridge.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                src="https://picsum.photos/300/640"
                 alt="hero"
                 fill
                 className="object-cover"
@@ -39,7 +43,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <ArrowPath direction="down" inverted />
     </section>
   );
 };
