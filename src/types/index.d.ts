@@ -15,3 +15,12 @@ export interface Feature {
   title: string;
   description: string;
 }
+
+export interface PricingTier {
+  name: string;
+  price: string;
+  description: string;
+  features: string[];
+  buttonText: string;
+  popular?: boolean;
+}

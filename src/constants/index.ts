@@ -1,4 +1,4 @@
-import { Feature, Service } from "@/types";
+import { Feature, PricingTier, Service } from "@/types";
 import { BiRocket } from "react-icons/bi";
 import { BsWindowDesktop } from "react-icons/bs";
 import {
@@ -72,5 +72,50 @@ export const featureList: Feature[] = [
     title: "Feature Three Title",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam minus suscipit vel, sit veritatis possimus molestias odio voluptates facilis omnis!"
+  }
+];
+
+export const pricingTiers: PricingTier[] = [
+  {
+    name: "Basic",
+    price: "$9",
+    description: "Perfect for individuals and small projects",
+    features: [
+      "Up to 5 projects",
+      "1GB storage",
+      "Basic support",
+      "Access to core features"
+    ],
+    buttonText: "Get Started"
+  },
+  {
+    name: "Pro",
+    price: "$29",
+    description: "Ideal for growing teams and businesses",
+    features: [
+      "Unlimited projects",
+      "10GB storage",
+      "Priority support",
+      "Advanced features",
+      "Team collaboration",
+      "Analytics dashboard"
+    ],
+    buttonText: "Try Pro",
+    popular: true
+  },
+  {
+    name: "Enterprise",
+    price: "$99",
+    description: "For large organizations with custom needs",
+    features: [
+      "Unlimited everything",
+      "Custom storage limits",
+      "24/7 dedicated support",
+      "Custom integrations",
+      "Advanced security",
+      "SLA guarantee",
+      "Custom training"
+    ],
+    buttonText: "Contact Sales"
   }
 ];

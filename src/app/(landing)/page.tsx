@@ -4,6 +4,7 @@ import Services from "@/components/landing/services";
 import Features from "@/components/landing/features";
 import GetService from "@/components/landing/get-service";
 import About from "@/components/landing/about";
+import Pricing from "@/components/landing/pricing";
 
 const LandingPage = () => {
   return (
@@ -14,6 +15,7 @@ const LandingPage = () => {
       <Features />
       <GetService />
       <About />
+      <Pricing />
     </main>
   );
 };

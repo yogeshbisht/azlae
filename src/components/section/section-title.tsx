@@ -14,7 +14,7 @@ const SectionTitle = ({
   inverted
 }: SectionTitleProps) => {
   return (
-    <div className={cn("text-center mb-12", left && "text-left")}>
+    <div className={cn("text-center mb-16", left && "text-left")}>
       <h2
         className={cn(
           "text-4xl md:text-5xl/tight lg:text-6xl/tight font-extrabold capitalize leading-normal",
