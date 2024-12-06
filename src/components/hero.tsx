@@ -2,14 +2,13 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { FaAndroid, FaApple } from "react-icons/fa6";
 import SectionTitle from "./section/section-title";
+import { HERO_POLYGON } from "@/constants";
 
 const HeroSection = () => {
   return (
     <section
       className="relative h-[720px] bg-brand"
-      style={{
-        clipPath: "polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%)"
-      }}
+      style={{ clipPath: HERO_POLYGON }}
     >
       <div className="section-padding grid h-full max-w-screen-2xl grid-cols-1 items-center justify-between gap-4 md:grid-cols-2">
         <div className="mt-24 flex flex-col">

@@ -3,7 +3,7 @@
 import SectionContainer from "@/components/section/section-container";
 import SectionTitle from "@/components/section/section-title";
 import { Button } from "@/components/ui/button";
-import { pricingTiers } from "@/constants";
+import { SECTION_POLYGON, pricingTiers } from "@/constants";
 import { FaCheck } from "react-icons/fa6";
 import { useState } from "react";
 
@@ -21,9 +21,7 @@ export default function Pricing() {
     <SectionContainer
       sectionId="pricing"
       className="bg-slate-200 py-40"
-      style={{
-        clipPath: "polygon(0 0, 50% 5%, 100% 0, 100% 95%, 50% 100%, 0 95%)"
-      }}
+      style={{ clipPath: SECTION_POLYGON }}
     >
       <SectionTitle
         title="Simple, Transparent Pricing"

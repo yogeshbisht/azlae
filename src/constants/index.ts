@@ -10,6 +10,12 @@ import {
 import { MdOutlineWeb } from "react-icons/md";
 import { PiUsersThreeFill } from "react-icons/pi";
 
+// Section polygon constants
+export const POLYGON_TOP = "50px";
+export const POLYGON_BOTTOM = `calc(100% - ${POLYGON_TOP})`;
+export const HERO_POLYGON = `polygon(0 0, 100% 0, 100% ${POLYGON_BOTTOM}, 50% 100%, 0 ${POLYGON_BOTTOM})`;
+export const SECTION_POLYGON = `polygon(0 0, 50% ${POLYGON_TOP}, 100% 0, 100% ${POLYGON_BOTTOM}, 50% 100%, 0 ${POLYGON_BOTTOM})`;
+
 export const serviceList: Service[] = [
   {
     icon: FaChartBar,
@@ -152,28 +158,28 @@ export const testimonialData = [
   {
     name: "Sarah Johnson",
     role: "Product Manager",
-    avatar: "/testimonials/avatar-1.jpg", // Add actual avatar images
+    avatar: "girl",
     content:
       "The platform has transformed how our team handles code reviews. The automated workflows have saved us countless hours. The intelligent code review features are incredible. It's like having an extra team member who never misses a detail."
   },
   {
     name: "Michael Chen",
     role: "Senior Developer",
-    avatar: "/testimonials/avatar-2.jpg",
+    avatar: "boy",
     content:
       "The intelligent code review features are incredible. It's like having an extra team member who never misses a detail."
   },
   {
     name: "Emily Rodriguez",
     role: "Tech Lead",
-    avatar: "/testimonials/avatar-3.jpg",
+    avatar: "girl",
     content:
       "Implementation was smooth, and the support team was incredibly helpful. Our productivity has increased significantly."
   },
   {
     name: "David Kim",
     role: "Software Engineer",
-    avatar: "/testimonials/avatar-4.jpg",
+    avatar: "boy",
     content:
       "The platform's intuitive interface and powerful features make it an essential tool for our development workflow."
   }
@@ -184,36 +190,60 @@ export const blogData: Blog[] = [
     id: 1,
     image: "image1.jpg",
     title: "Blog Post 1",
-    subtitle: "Subtitle for Blog Post 1"
+    subtitle: "Subtitle for Blog Post 1",
+    date: "2024-01-01",
+    author: "John Doe",
+    content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam minus suscipit vel, sit veritatis possimus molestias odio voluptates facilis omnis!"
   },
   {
     id: 2,
     image: "image2.jpg",
     title: "Blog Post 2",
-    subtitle: "Subtitle for Blog Post 2"
+    subtitle: "Subtitle for Blog Post 2",
+    date: "2024-01-02",
+    author: "Jane Doe",
+    content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam minus suscipit vel, sit veritatis possimus molestias odio voluptates facilis omnis!"
   },
   {
     id: 3,
     image: "image3.jpg",
     title: "Blog Post 3",
-    subtitle: "Subtitle for Blog Post 3"
+    subtitle: "Subtitle for Blog Post 3",
+    date: "2024-01-03",
+    author: "John Doe",
+    content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam minus suscipit vel, sit veritatis possimus molestias odio voluptates facilis omnis!"
   },
   {
     id: 4,
     image: "image4.jpg",
     title: "Blog Post 4",
-    subtitle: "Subtitle for Blog Post 4"
+    subtitle: "Subtitle for Blog Post 4",
+    date: "2024-01-04",
+    author: "Jane Doe",
+    content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam minus suscipit vel, sit veritatis possimus molestias odio voluptates facilis omnis!"
   },
   {
     id: 5,
     image: "image5.jpg",
     title: "Blog Post 5",
-    subtitle: "Subtitle for Blog Post 5"
+    subtitle: "Subtitle for Blog Post 5",
+    date: "2024-01-05",
+    author: "John Doe",
+    content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam minus suscipit vel, sit veritatis possimus molestias odio voluptates facilis omnis!"
   },
   {
     id: 6,
     image: "image6.jpg",
     title: "Blog Post 6",
-    subtitle: "Subtitle for Blog Post 6"
+    subtitle: "Subtitle for Blog Post 6",
+    date: "2024-01-06",
+    author: "Jane Doe",
+    content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam minus suscipit vel, sit veritatis possimus molestias odio voluptates facilis omnis!"
   }
 ];

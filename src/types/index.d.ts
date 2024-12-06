@@ -35,4 +35,7 @@ export interface Blog {
   image: string;
   title: string;
   subtitle: string;
+  date: string;
+  author: string;
+  content: string;
 }

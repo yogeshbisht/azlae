@@ -10,7 +10,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import SectionContainer from "@/components/section/section-container";
 import SectionTitle from "@/components/section/section-title";
-import { testimonialData } from "@/constants";
+import { SECTION_POLYGON, testimonialData } from "@/constants";
 
 const TestimonialCard = ({
   testimonial
@@ -23,7 +23,10 @@ const TestimonialCard = ({
         <div className="flex flex-col gap-4">
           <div className="flex items-center gap-4">
             <Avatar>
-              <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
+              <AvatarImage
+                src={`https://avatar.iran.liara.run/public/${testimonial.avatar}`}
+                alt={testimonial.name}
+              />
               <AvatarFallback>{testimonial.name[0]}</AvatarFallback>
             </Avatar>
             <div>
@@ -44,8 +47,13 @@ const TestimonialCard = ({
 
 const Testimonials = () => {
   return (
-    <SectionContainer sectionId="testimonials">
+    <SectionContainer
+      sectionId="testimonials"
+      className="bg-brand py-40"
+      style={{ clipPath: SECTION_POLYGON }}
+    >
       <SectionTitle
+        inverted
         title="What Our Clients Say"
         description="Hear from our satisfied customers about their experience"
       />

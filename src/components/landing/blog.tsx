@@ -27,9 +27,13 @@ const Blog = () => {
             </CardHeader>
             <CardContent>
               <h3 className="text-lg font-semibold">{post.title}</h3>
-              <p className="text-sm text-gray-600">{post.subtitle}</p>
+              <p className="text-sm text-gray-600">{post.content}</p>
             </CardContent>
-            <CardFooter>
+            <CardFooter className="flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <p className="text-sm text-gray-600">{post.date}</p>
+                <p className="text-sm text-gray-600">{post.author}</p>
+              </div>
               <Link
                 href={`/blog/${post.id}`}
                 className="text-blue-500 hover:underline"
