@@ -9,6 +9,12 @@ const nextConfig: NextConfig = {
         protocol: "https",
         port: "",
         pathname: "/**"
+      },
+      {
+        hostname: "avatar.iran.liara.run",
+        protocol: "https",
+        port: "",
+        pathname: "/public/**"
       }
     ]
   }

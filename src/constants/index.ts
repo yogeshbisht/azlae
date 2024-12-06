@@ -1,4 +1,4 @@
-import { FAQ, Feature, PricingTier, Service } from "@/types";
+import { Blog, FAQ, Feature, PricingTier, Service } from "@/types";
 import { BiRocket } from "react-icons/bi";
 import { BsWindowDesktop } from "react-icons/bs";
 import {
@@ -154,7 +154,7 @@ export const testimonialData = [
     role: "Product Manager",
     avatar: "/testimonials/avatar-1.jpg", // Add actual avatar images
     content:
-      "The platform has transformed how our team handles code reviews. The automated workflows have saved us countless hours."
+      "The platform has transformed how our team handles code reviews. The automated workflows have saved us countless hours. The intelligent code review features are incredible. It's like having an extra team member who never misses a detail."
   },
   {
     name: "Michael Chen",
@@ -176,5 +176,44 @@ export const testimonialData = [
     avatar: "/testimonials/avatar-4.jpg",
     content:
       "The platform's intuitive interface and powerful features make it an essential tool for our development workflow."
+  }
+];
+
+export const blogData: Blog[] = [
+  {
+    id: 1,
+    image: "image1.jpg",
+    title: "Blog Post 1",
+    subtitle: "Subtitle for Blog Post 1"
+  },
+  {
+    id: 2,
+    image: "image2.jpg",
+    title: "Blog Post 2",
+    subtitle: "Subtitle for Blog Post 2"
+  },
+  {
+    id: 3,
+    image: "image3.jpg",
+    title: "Blog Post 3",
+    subtitle: "Subtitle for Blog Post 3"
+  },
+  {
+    id: 4,
+    image: "image4.jpg",
+    title: "Blog Post 4",
+    subtitle: "Subtitle for Blog Post 4"
+  },
+  {
+    id: 5,
+    image: "image5.jpg",
+    title: "Blog Post 5",
+    subtitle: "Subtitle for Blog Post 5"
+  },
+  {
+    id: 6,
+    image: "image6.jpg",
+    title: "Blog Post 6",
+    subtitle: "Subtitle for Blog Post 6"
   }
 ];

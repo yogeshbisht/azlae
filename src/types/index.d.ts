@@ -29,3 +29,10 @@ export interface FAQ {
   question: string;
   answer: string;
 }
+
+export interface Blog {
+  id: number;
+  image: string;
+  title: string;
+  subtitle: string;
+}

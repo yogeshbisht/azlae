@@ -18,8 +18,8 @@ const TestimonialCard = ({
   testimonial: (typeof testimonialData)[0];
 }) => {
   return (
-    <Card>
-      <CardContent className="p-6">
+    <Card className="h-64">
+      <CardContent className="p-6 h-full">
         <div className="flex flex-col gap-4">
           <div className="flex items-center gap-4">
             <Avatar>
@@ -50,14 +50,8 @@ const Testimonials = () => {
         description="Hear from our satisfied customers about their experience"
       />
 
-      <div className="mt-8">
-        <Carousel
-          opts={{
-            align: "start",
-            loop: true
-          }}
-          className="w-full"
-        >
+      <div className="mt-8 relative">
+        <Carousel opts={{ align: "start", loop: true }} className="w-full">
           <CarouselContent className="-ml-2 md:-ml-4">
             {testimonialData.map((testimonial, index) => (
               <CarouselItem
@@ -68,8 +62,10 @@ const Testimonials = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="hidden md:flex" />
-          <CarouselNext className="hidden md:flex" />
+          <div className="absolute -bottom-12 left-1/2 -translate-x-1/2 gap-4 hidden md:flex">
+            <CarouselPrevious />
+            <CarouselNext />
+          </div>
         </Carousel>
       </div>
     </SectionContainer>

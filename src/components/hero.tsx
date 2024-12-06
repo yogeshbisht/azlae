@@ -6,7 +6,7 @@ import SectionTitle from "./section/section-title";
 const HeroSection = () => {
   return (
     <section
-      className="relative h-[720px] bg-neutral-900"
+      className="relative h-[720px] bg-brand"
       style={{
         clipPath: "polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%)"
       }}
@@ -31,7 +31,7 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="relative flex h-full items-center justify-center">
-          <div className="shadow-large relative z-10 mb-[-200px] hidden h-[660px] w-[320px] items-center justify-center rounded-[40px] bg-neutral-200 lg:flex">
+          <div className="shadow-large relative z-10 mb-[-200px] hidden h-[660px] w-[320px] items-center justify-center rounded-[40px] bg-brand-light lg:flex">
             <div className="relative h-[640px] w-[300px] overflow-hidden rounded-[40px]">
               <Image
                 src="https://picsum.photos/300/640"
